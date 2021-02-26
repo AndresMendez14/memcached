@@ -29,16 +29,16 @@ telnet localhost 3000
 
 ## Ejecutando las pruebas ⚙️
 
-Al momento de utilizar este servidor,el cliente debera enviar comandos de la siguiente forma:  < command name> < key>  < flags>  < exptime>  < bytes> o en caso de usar el comando cas debera ser asi: cas < key>  < flags>  < exptime>  < bytes> < cas unique> **COMANDOS para guardar informacion**
-get < key> o get < key1 key2 ...  keyn>  **Comandos de recuperacion**
+Al momento de utilizar este servidor,el cliente debera enviar comandos de la siguiente forma:  < command name> < key>  < flags>  < exptime>  < bytes> o en caso de usar el comando cas debera ser asi: cas < key>  < flags>  < exptime>  < bytes> < cas unique> **COMANDOS para guardar información**
+get < key> o get < key1 key2 ...  keyn>  **Comandos de recuperación**
 * Para usar comandos sera necesario que haya entre simbolos < cm> < key> un espacio y que dentro de los simbolos este la palabra sin espacios
-Una vez haya una comunicacion entre el cliente y el servidor, este mismo dara una respuesta ya sea dando el dato pedido, avisando que se guardo la informacion que corresponde o indicando un error. Una vez realizada la peticion para volver a realizar un nuevo pedido sera necesario volver a conectarse al servidor. A modo de ejemplo la comunicacion sera asi: 
+Una vez haya una comunicacion entre el cliente y el servidor, este mismo dara una respuesta ya sea dando el dato pedido, avisando que se guardo la información que corresponde o indicando un error. Una vez realizada la petición para volver a realizar un nuevo pedido sera necesario volver a conectarse al servidor. A modo de ejemplo la comunicación sera asi: 
 ```
 <set> <clave> <123> <0> <8> 
 DATO 
 STORED
 ```
-Como se ve en el ejemplo hay una comunicacion establecida cliente/servidor donde el cliente envia una solicitud(en este caso usa el comando set) el servidor recibe dicho comando y espera que envie el dato, si guardo el dato responde STORED, en caso de ocurrir algun error la respuesta seria ERROR 
+Como se ve en el ejemplo hay una comunicación establecida cliente/servidor donde el cliente envia una solicitud(en este caso usa el comando set) el servidor recibe dicho comando y espera que envie el dato, si guardo el dato responde STORED, en caso de ocurrir algun error la respuesta seria ERROR 
 
 
 ## Construido con 
